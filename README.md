@@ -6,6 +6,6 @@ my own implementation of the built-in scanner structure that works optimally
 ## markup
 my set of classes for creating text markup
 ## md2html (Markdown to HTML)
-Converter from markdown to HLTM markup using OOP paradigms
+converter from markdown to HLTM markup using OOP paradigms
 ## mnk game
-A typical mnk game between two players, with an implemented Olympic system and a round board, as well as checking for a technical draw. this code complies with all SOLID principles
+a typical mnk game between two players, with an implemented Olympic system and a round board, as well as checking for a technical draw. this code complies with all SOLID principles
