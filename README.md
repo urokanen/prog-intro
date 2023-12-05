@@ -1,6 +1,5 @@
 # prog-intro 
 these are my homework assignments for the course of introduction to programming from Korneev Georgy Alexandrovich, a teacher at ITMO University
-# here is some information about the most difficult of them
 ## FastScanner 
 my own implementation of the built-in scanner structure that works optimally
 ## markup
