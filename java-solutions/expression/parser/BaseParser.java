@@ -1,5 +1,7 @@
 package expression.parser;
 
+import expression.exceptions.*;
+
 public class BaseParser {
     private static final char END = '\0';
     private CharSource source;
@@ -20,6 +22,22 @@ public class BaseParser {
         return ch == expected;
     }
 
+    public int getPosition() {
+        return source.getPos();
+    }
+
+    public boolean checkString(String test) {
+        if (source.check(test)) {
+            expect(test);
+            return true;
+        }
+        return false;
+    }
+
+    public boolean isEnd() {
+        return take() == END;
+    }
+
     protected boolean take(final char expected) {
         if (test(expected)) {
             take();
@@ -30,7 +48,7 @@ public class BaseParser {
 
     protected void expect(final char expected) {
         if (!take(expected)) {
-            throw error("Expected '" + expected + "', found '" + ch + "'");
+            throw new IncorrectBracketsException(Character.toString(expected));
         }
     }
 

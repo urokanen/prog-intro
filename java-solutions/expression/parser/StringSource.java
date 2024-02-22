@@ -9,6 +9,21 @@ public class StringSource implements CharSource {
     }
 
     @Override
+    public boolean check(String test) {
+        int ind = pos - 1;
+        while (ind < data.length() && ind - pos + 1 < test.length() &&
+                data.charAt(ind) == test.charAt(ind - pos + 1)) {
+            ind++;
+        }
+        return ind - pos + 1 == test.length();
+    }
+
+    @Override
+    public int getPos() {
+        return pos;
+    }
+
+    @Override
     public boolean hasNext() {
         return pos < data.length();
     }
