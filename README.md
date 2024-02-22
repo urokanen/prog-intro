@@ -8,5 +8,5 @@ my set of classes for creating text markup
 converter from markdown to HLTM markup using OOP paradigms with linear asymptotics
 ## mnk game
 a typical mnk game between two players, with an implemented Olympic system and a round board, as well as checking for a technical draw during the time O(k). this code complies with all SOLID principles
-## expression/parser 
-a program for calculating mathematical expressions and a parser for these expressions with linear asymptotics
+## expression/parser/exception
+a program for calculating mathematical expressions and a parser for these expressions with linear asymptotics, as well as an additional ExceptionParser parser that throws errors when an incorrect expression is used
